@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
+
+import '../../domain/entities/transaction_item.dart';
 
 class TransactionDetailsPage extends StatelessWidget {
   final TransactionItem item;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
+
+import '../../domain/entities/transaction_item.dart';
 
 class AddTransactionPage extends StatefulWidget {
   const AddTransactionPage({super.key});
@@ -122,7 +123,8 @@ class _AddTransactionPageState extends State<AddTransactionPage> {
                   Expanded(
                     child: OutlinedButton(
                       onPressed: _pickDate,
-                      child: Text(_date.toLocal().toString().split(' ').first),
+                      child:
+                          Text(_date.toLocal().toString().split(' ').first),
                     ),
                   ),
                 ],
